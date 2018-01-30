@@ -11,7 +11,7 @@ import javax.sql.DataSource;
 @WebServlet("/Login")
 public class LoginServlet extends HttpServlet {
     public static DataSource getMysqlDataSource() {
-        DataSource dataSource = new MysqlDataSource();
+       MysqlDataSource dataSource = new MysqlDataSource();
     
         // Set dataSource Properties
         dataSource.setServerName("localhost");
